@@ -23,9 +23,35 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+You would use class components over function components because you can use the React Lifecycle inside class components, where as in function components you cannot. Class components are more dynamic because they can implement state where as function can only accept data and display in some form. 
+
 - [ ] Name three lifecycle methods and their purposes.
+
+#1 - constructor () - 
+
+Typically, in React constructors are only used for two purposes:
+* Initializing local state by assigning an object to this.state.
+* Binding event handler methods to an instance.
+
+#2 - componentDidMount() is invoked immediately after a component is mounted (inserted into the tree). Initialization that requires DOM nodes should go here. If you need to load data from a remote endpoint, this is a good place to instantiate the network request.
+
+#3 - The render() method is the only required method in a class component.
+When called, it should examine this.props and this.state and return one of the following types: React elements, Arrays, Strings & Numbers or Booleans.
+
 - [ ] What is the purpose of a custom hook?
+
+Building your own Hooks lets you extract component logic into reusable functions.
+
 - [ ] Why is it important to test our apps?
+
+* Surfaces bugs faster.
+* Reduces the risk of regressions.
+* Allows us to trust the code.
+* Makes us think about the edge cases.
+* Acts as a safety net when making changes or refactoring.
+* Acts as documentation for the code.
+* Encourages us to write more testable (better!) code.
 
 ## Project Set Up
 
